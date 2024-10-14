@@ -1,0 +1,78 @@
+ // 主题色
+ $theme-color:  #409eff;
+
+ 
+ @mixin placeholder($color: #a1a1a1) {
+ 	&::-webkit-input-placeholder{
+		color: $color;
+	}
+ }
+ 
+  @mixin n-textEllipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  }
+ 
+
+ @mixin shadow($bg:#fff){
+	 background: $bg;
+	 box-shadow: 0 0 5px 1px black(0.5);
+ }
+ @mixin n-row1{
+ 	display: flex;
+ 	align-items: center;
+ }
+ @mixin n-row2{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ @mixin n-row3{
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ }
+ @mixin n-row4{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+ }
+ @mixin n-row5{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+ 
+ @mixin n-col1{
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ @mixin n-col2{
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-direction: column;
+ }
+ @mixin n-col3{
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	flex-direction: column;
+ }
+ @mixin n-col4{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex-direction: column;
+ }
+ @mixin n-col5{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-direction: column;
+ }
+ 
+ 
+ @mixin n-center{
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	transform: translate(-50%,-50%);
+ }
